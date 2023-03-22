@@ -39,7 +39,7 @@ button {
 .vert-strip {
   width: 37.5rem;
   height: 100%;
-  background-color: #611818;
+  background-color: hsl(0, 60%, 24%);
 }
 
 .header-text-container {

@@ -10,7 +10,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        burgundyRed: "hsl(12, 88%, 59%)",
+        burgundyRed: " hsl(0, 60%, 24%)",
       },
     },
   },
