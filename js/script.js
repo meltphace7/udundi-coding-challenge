@@ -9,11 +9,11 @@ const closeModalBtn = document.querySelector('.close-modal-btn');
 const headerTextContainer = document.querySelector('.header-text-container')
 
 openModalBtn.addEventListener("click", () => {
-    modal.classList.toggle("hidden");
-    headerTextContainer.classList.toggle("hidden");
+    modal.classList.toggle("hidden-modal");
+    headerTextContainer.classList.add("hidden");
 });
 
 closeModalBtn.addEventListener("click", () => {
-    modal.classList.toggle("hidden");
-     headerTextContainer.classList.toggle("hidden");
+    modal.classList.toggle("hidden-modal");
+     headerTextContainer.classList.remove("hidden");
 });
