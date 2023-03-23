@@ -577,12 +577,6 @@ video {
   align-items: center;
 }
 
-.space-x-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1rem * var(--tw-space-x-reverse));
-  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .overflow-hidden {
   overflow: hidden;
 }
@@ -708,9 +702,9 @@ button {
   /* font-weight: 100; */
   /* font-size: 2rem; */
   /* width: 15rem; */
-  /* display: flex;
+  /* display: flex; */
   justify-content: space-between;
-  align-items: center; */
+  /* align-items: center; */
   opacity: 0;
   animation: moreDetailsFadeIn 300ms ease-in 1000ms forwards;
 }
