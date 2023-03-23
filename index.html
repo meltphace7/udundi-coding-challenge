@@ -22,19 +22,19 @@
     <script src="js/script.js" defer></script>
     <title>Document</title>
   </head>
-  <body>
-    <header class="header">
-      <div class="vert-strip bg-burgundyRed"></div>
-      <div class="header-text-container">
-        <h1 class="header-title">Explore</h1>
-        <div class="header-text-btn-container">
-          <button class="open-modal-btn">
-            <img src="assets/Plus.svg" alt="plus icon" />
+  <body class="relative w-full min-h-full">
+    <header class="header w-full h-screen relative">
+      <div class="vert-strip h-full bg-burgundyRed"></div>
+      <div class="header-text-container absolute text-white">
+        <h1 class="text-9xl font-medium">Explore</h1>
+        <div class="header-text-btn-container flex space-x-4 items-center text-xl font-thin ml-8 w-60">
+          <button class="open-modal-btn cursor-pointer">
+            <img class="h-12" src="assets/Plus.svg" alt="plus icon" />
           </button>
           <h3>More Details</h3>
         </div>
       </div>
-      <div class="social-container">
+      <div class="social-container absolute">
         <a href="https://www.facebook.com/" target="_blank"
           ><img src="assets/Facebook.svg" alt="Facebook icon"
         /></a>
@@ -42,12 +42,12 @@
           ><img src="assets/Instagram.svg" alt="Instagram icon"
         /></a>
       </div>
-      <div class="modal hidden">
-        <button class="close-modal-btn">
-          <span class="line-1"></span>
-          <span class="line-2"></span>
+      <div class="modal absolute hidden bg-white overflow-hidden">
+        <button class="close-modal-btn absolute w-16 h-16 mt-4">
+          <span class="line-1 bg-black absolute"></span>
+          <span class="line-2 bg-black absolute"></span>
         </button>
-        <h1><span>E</span>xplore</h1>
+        <h1 class="text-burgundyRed font-medium">Explore</h1>
         <div class="modal-underline"></div>
         <p>
           Sed ut perspiciatis unde omnis iste natus error sit<br />voluptatem
@@ -61,7 +61,7 @@
           labore et dolore<br />magnam aliquam quaeret voluptatem. Ut enim ad<br />corporis
           suscipit laboriosam, nisi ut aliquid ex ea<br />commodi consequatur?
         </p>
-        <button class="read-more-btn">READ MORE</button>
+        <button class="read-more-btn text-white">READ MORE</button>
       </div>
     </header>
   </body>
